@@ -1,0 +1,86 @@
+*{
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: seashell;
+}
+nav{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 5px 5px;
+}
+a[href^="#"]{
+    color:black;
+    text-decoration: none;
+    font-size: large;
+}
+h1{
+    text-align: left;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+}
+#mainHeading{
+    color:red;
+}
+body{
+    margin: 8px;
+    display: block;
+    background-image: linear-gradient(to bottom right, seashell, brown);
+    border-radius: 0.7%;
+    line-height: 25px;
+}
+h2{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+}
+.travel,.float-container,.pets{
+    margin: 10px 0px;
+    border-color:rgb(230, 192, 144);
+    margin-left: 10%;
+    margin-right: 10%;
+    border-style: groove;
+    border-width: 10px;
+    border-radius: 0.7%;
+}
+.funParagraph{
+    color: green;
+}
+#quote{
+    font-family: 'Handlee', cursive;
+    background-color: lightgray;
+    border-radius: 0.9%;
+    width: 70%;
+    height:30%;
+    margin-left: 100px;
+}
+.travel{
+    width: 80%;
+    height: 50%;
+}
+#travel-pics{
+    padding: 5px 200px; 
+}
+.pet-pics{
+    padding: 5px 100px; 
+}
+ul{
+    margin-left: 5px;
+}
+.float-container{
+    display: flex;
+    width: 80%;
+    height:80%;
+}
+.lifestyle,.pro-plans,.movies,.books{
+    flex:1;
+    margin:0px 30px;
+}
+img{
+    height:200px;
+    width:300px;
+}
+footer{
+    text-align: center;
+    font-size: large;
+}
