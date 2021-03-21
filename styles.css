@@ -14,6 +14,9 @@ a[href^="#"]{
     text-decoration: none;
     font-size: large;
 }
+a[href^="#"]:hover{
+    background-color: burlywood;
+}
 h1{
     text-align: left;
     font-family: 'Pacifico', cursive;
@@ -26,8 +29,8 @@ body{
     margin: 8px;
     display: block;
     background-image: linear-gradient(to bottom right, seashell, brown);
-    border-radius: 0.7%;
     line-height: 25px;
+    border-radius: 10px;
 }
 h2{
     text-align: center;
@@ -41,28 +44,39 @@ h2{
     margin-right: 10%;
     border-style: groove;
     border-width: 10px;
-    border-radius: 0.7%;
+    border-radius: 10px;
 }
 .funParagraph{
     color: green;
 }
 #quote{
     font-family: 'Handlee', cursive;
-    background-color: lightgray;
-    border-radius: 0.9%;
-    width: 70%;
+    background-color: rgb(221, 203, 203);
+    border-radius: 10px;
+    width: 80%;
     height:30%;
-    margin-left: 100px;
+    margin-left:100px;
 }
 .travel{
     width: 80%;
     height: 50%;
 }
-#travel-pics{
-    padding: 5px 200px; 
+.pet-pics,.travel-pics{
+    display: flex;
 }
-.pet-pics{
-    padding: 5px 100px; 
+#nz-pic,#canada,#sydney{
+    flex:1;
+    height:250px;
+    width: 100%;
+}
+#aussi-dog,#main-coon,#golden-dog,#grey-cat{
+    flex:1;
+    height:190px;
+    width:100%
+}
+#nz-pic:hover,#canada:hover,#sydney:hover,#aussi-dog:hover,#main-coon:hover,#golden-dog:hover,#grey-cat:hover{
+    height:500px;
+    width:800px;
 }
 ul{
     margin-left: 5px;
@@ -76,11 +90,26 @@ ul{
     flex:1;
     margin:0px 30px;
 }
-img{
-    height:200px;
-    width:300px;
+.dollar{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Pacifico', cursive;
+    animation-name: pulse;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+      }
+    50%{
+        transform: scale(0.6);
+      }
 }
 footer{
     text-align: center;
     font-size: large;
+}
+.top{
+    margin-left:150px;
 }
